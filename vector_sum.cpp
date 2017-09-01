@@ -109,15 +109,3 @@ int main(void)
   MPI_Finalize();
   return 0;
 }
-
-
-int MPI_Gather(
-			void* 			send_buf_p,		/* IN */
-			int 			send_count,		/* IN */
-			MPI_Datatype 	send_type,		/* IN */
-			void*			recv_buf_p,		/* OUT */
-			int				recv_count,		/* IN */
-			MPI_Datatype	recv_type,		/* IN */
-			int				dest_proc,		/* IN */
-			MPI_Comm		comm			/* IN */
-			)
